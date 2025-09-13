@@ -1,0 +1,71 @@
+$jobs_card_padding: 1rem; 
+$jobs_card_margin: 1.5rem 0;
+$jobs_card_borderradius: 5;
+$jobs_card_bordercolor: $blue_green;
+$jobs_card_background: $body_background;
+$jobs_card_maxwidth: 544;
+$jobs_subtitle_margin: .5rem 0;
+$jobs_subtitle_fontsize: 24;
+$jobs_date_fontsize: 16;
+$jobs_date_fontweight: 400;
+$jobs_list_item_padding: .25rem 1rem;
+$jobs_list_item_before_background: $jobs_card_bordercolor;
+$jobs_list_item_before_borderradius: 54;
+$jobs_list_item_before_width: 6;
+$jobs_list_item_before_height: 6;
+$jobs_list_item_before_marginright: 8;
+
+.jobs {
+    &.section {
+        height: unset !important; // momentané
+    }
+    &__info {
+        // max-width: 600px;
+    }
+    &__card {
+        margin: $jobs_card_margin;
+        padding: $jobs_card_padding;
+        border-radius: rem($jobs_card_borderradius);
+        border: 1px solid;
+        border-color: $jobs_card_bordercolor;
+        background: $jobs_card_background;
+        backdrop-filter: blur(20px);
+        max-width: rem($jobs_card_maxwidth);
+        h2 {
+                text-transform: uppercase;
+                color: $white;
+                text-decoration: underline;
+                margin: $jobs_subtitle_margin;
+                font-size: rem($jobs_subtitle_fontsize) !important;
+        } 
+        ul > li {
+            padding: $jobs_list_item_padding; 
+            text-indent: -14px;
+            &:before {
+                content: "";
+                display: inline-block;
+                border-radius: 50px;
+                vertical-align: middle;
+                width: rem($jobs_list_item_before_width);
+                height: rem($jobs_list_item_before_height);
+                margin-right: rem($jobs_list_item_before_marginright);
+                background: $jobs_list_item_before_background; 
+            }
+        }
+    }
+    &__date {
+        font-size: rem($jobs_date_fontsize) !important;
+        color: $grey;
+        font-weight: $jobs_date_fontweight;
+    }
+}
+
+
+@media screen and (max-width: $default) {
+    .jobs {
+        align-items: center;
+        & > img {
+            position: static;
+        }
+    }
+}

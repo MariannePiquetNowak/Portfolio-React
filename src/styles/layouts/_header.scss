@@ -1,0 +1,18 @@
+.about {
+    &__info {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: $default) {
+    .about {
+        align-items: center;
+        img {
+            position: static;
+        }
+        &__info {
+            max-width: 600px;
+            margin: rem(16) auto;
+        }
+    }
+}

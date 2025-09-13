@@ -1,0 +1,143 @@
+{
+    "navbar": [
+		{
+			"id": "#About",
+			"name": "About",
+			"title": "Go to section 'About'"
+		}, 
+		{
+			"id": "#Skills",
+			"name": "Skills",
+			"title": "Go to section 'Skills'"
+		},
+		{
+			"id": "#Experiences",
+			"name": "Experiences",
+			"title": "Go to section 'Experiences'"
+		}, 
+		{
+			"id": "#Works",
+			"name": "Projects",
+			"title": "Go to section 'Projects'"
+		},
+		{
+			"id": "#Contact",
+			"name": "Contact me",
+			"title": "Contact me"
+		}
+	], 
+    "resume": {
+		"name": "Resume",
+		"title": "Download my resume"
+	},  
+	"socials": [
+		{
+			"name": "linkedin",
+			"alt": "https://www.linkedin.com/in/marianne-piquet-nowak/"
+		},
+		{
+			"name": "github",
+			"alt": "https://www.linkedin.com/in/marianne-piquet-nowak/"
+		},
+		{
+			"name": "azure",
+			"alt": "https://github.com/MariannePiquetNowak"
+		},
+		{
+			"name": "deviantArt",
+			"alt": "https://www.deviantart.com/sckyzo-pat"
+		},
+		{
+			"name": "instagram",
+			"alt": "https://www.instagram.com/mariannepiquet/"
+		}
+	],
+    "about": {
+    	"title": "Hi! My name is",
+		"name": "Marianne Piquet-Nowak",
+		"job": "I’m a Developer Front-End and sometimes a Graphist",
+		"presentation": "I’m a Front-End Developer located in France. I have a passion for animations, design, and UI effects that take users in a dynamic experience."
+	},
+    "skills": {
+		"go": "Go to the website of",
+		"more": "See more",
+		"close": "Close",
+		"title": "About my skills", 
+		"subtitle": "I have an atypical background", 
+        "description": "After passing a BTS in banking sector, I went into the butcher's trade where I obtained a CAP in butchery and worked there for 8 years. <br>Afterwards, I decided to move towards a profession where my passion for technology and graphic design would be complementary and where mental boredom would be almost inexistent. <br>In 2019, I will start my professional reconversion as a web developer, first Front-End then Full-Stack." ,
+		"description_2": "Throughout my career, I've been able to work in the 3 main areas of web design: design, front-end development and back-end development, which enables me to be as autonomous as possible on a project and to understand it at all levels.",
+        "graphism_title": "Design",
+        "front_title": "Front-End development",
+        "back_title": "Back-End development",
+		"items": [
+			{
+				"name": "html",
+				"href": "https://developer.mozilla.org/fr/docs/Web/HTML"
+			},
+			{
+				"name": "css",
+				"href": "https://developer.mozilla.org/fr/docs/Web/CSS/Reference"
+			},
+			{
+				"name": "sass",
+				"href": "https://sass-lang.com/documentation/"
+			},
+			{
+				"name": "less",
+				"href": "https://lesscss.org/"
+			},
+			{
+				"name": "bootstrap",
+				"href": "https://getbootstrap.com/docs/4.1/getting-started/introduction/"
+			},
+			{
+				"name": "tailwind",
+				"href": "https://tailwindcss.com/docs/installation/using-vite"
+			},
+			{
+				"name": "javascript",
+				"href": "https://developer.mozilla.org/fr/docs/Web/JavaScript"
+			},
+			{
+				"name": "reactjs",
+				"href": "https://react.dev/learn"
+			},
+			{
+				"name": "php",
+				"href": "https://www.php.net/docs.php"
+			},
+			{
+				"name": "mysql",
+				"href": "https://dev.mysql.com/doc/"
+			},
+			{
+				"name": "symfony",
+				"href": "https://symfony.com/doc/current/index.html"
+			},
+			{
+				"name": "strapi",
+				"href": "https://docs.strapi.io/"
+			},
+			{
+				"name": "wordpress",
+				"href": "https://wordpress.org/documentation/"
+			},
+			{
+				"name": "linux",
+				"href": "https://help.ubuntu.com/"
+			},
+			{
+				"name": "vscode",
+				"href": "https://code.visualstudio.com/docs"
+			},
+			{
+				"name": "windows",
+				"href": "https://learn.microsoft.com/fr-fr/windows/"
+			},
+			{
+				"name": "accessibility",
+				"href": "https://accessibilite.numerique.gouv.fr/"
+			}
+		]
+	}
+}

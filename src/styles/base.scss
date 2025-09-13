@@ -1,0 +1,246 @@
+@import "./utils/mixins.scss";
+@import "./utils/breakpoint";
+
+* {
+  font-family: "Roboto", "sans-serif";
+  font-size: rem(16);
+}
+
+// Scollbar fo Chrome, Edge & Safari
+body::-webkit-scrollbar,
+.scroll-container::-webkit-scrollbar {
+  width: 3px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track,
+.scroll-container::-webkit-scrollbar-track {
+  background: $blue_dark; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb,
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: $blue_green; /* color of the scroll thumb */
+  border: 3px solid $blue_green; /* creates padding around scroll thumb */
+}
+
+.main {
+  display: flex;
+  position: relative;
+}
+
+.switch-language {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  margin: 0.5rem 1rem; 
+}
+
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: $white;
+  background: $body_background;
+  margin: 0 auto !important;
+  ul {
+    padding: 0;
+  }
+  h1 {
+    font-size: $title-size-mobile;
+    font-weight: 700;
+  }
+
+  .title_section {
+    display: inline-block;
+    position: relative;
+    &:after, 
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+    }
+    &:before {
+      width: $title_section_before_width;
+      height: $title_section_before_height;
+      background:  $title_section_before_background;
+      top: $title_section_before_top;
+      
+    }
+    &:after {
+      width: $title_section_after_width;
+      height: $title_section_after_height;
+      background: $title_section_after_background;
+      top: $title_section_after_top;
+    }
+  }
+
+  h2 {
+    font-size: $sub-title-size-mobile;
+    color: $grey;
+    font-weight: 700;
+  }
+  p {
+    padding: 1rem 0;
+  }
+  p,
+  li {
+    font-size: $text-size-mobile;
+    line-height: rem(24);
+  }
+  span, h3 {
+    color: $blue_green;
+    font-weight: 500;
+  }
+
+  p > p:not(:last-child) {
+    padding-bottom: rem(16) !important;
+  }
+  a {
+    text-decoration: none;
+  }
+  a, button {
+    &:focus-visible,
+    &:focus {
+      @include outline-focus($white);
+    }
+  }
+  li {
+    list-style: none;
+  }
+  .wrapper {
+    width: 100%;
+  }
+}
+
+// Font-size
+@media screen and (min-width: 768px) {
+  h1, 
+  .title_section {
+    font-size: $title-size-tablet !important;
+  }
+  h2 {
+    font-size: $sub-title-size-tablet !important;
+  }
+  p,
+  span,
+  h3,
+  li {
+    font-size: $text-size-tablet !important;
+  }
+  p {
+    line-height: rem(24) !important;
+  }
+/* 
+  p:first-child {
+    padding-top: rem(16);
+  } */
+}
+
+@media screen and (min-width: $desktop_min_width) {
+  h1,
+  body .title_section {
+    font-size: $title-size-laptop !important;
+  }
+  body .title_section {
+    font-size: $title_section_font_size !important;  
+  }
+  h2 {
+    font-size: $sub-title-size-laptop !important;
+  }
+  p:not(.footer__item),
+  h3,
+  span {
+    font-size: $text-size-laptop !important;
+  }
+  p.footer__item {
+    font-size: 0.75rem !important;
+  }
+  p {
+    line-height: 27px !important;
+  }
+
+  p:first-child {
+    padding-top: rem(24);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  h1{
+    font-size: $title-size-desktop !important;
+  }
+  .subtitle_section {
+    font-size: rem(28) !important;
+  }
+  h2 {
+    font-size: $sub-title-size-desktop !important;
+  }
+  p,
+  span {
+    font-size: $text-size-desktop !important;
+  }
+  p {
+    line-height: rem(32) !important;
+  }
+
+  p:first-child {
+    padding-top: rem(24);
+  }
+}
+
+div.container {
+  color: $white;
+
+  p > p:not(:last-child) {
+    padding-bottom: rem(32);
+  }
+
+  @media screen and (min-width: 1534px) {
+    margin: auto 6rem;
+  }
+}
+
+@media screen and (min-width: $tablet_min_width) {
+  body .wrapper {
+    padding-left: rem($navbar_width);
+/*     &.scroll-container {
+      height: 100vh;
+      overflow-y: auto;
+      scroll-snap-type: y mandatory;
+    } */
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+  }
+
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: $mobile_max_width) {
+  body {
+    .wrapper {
+      padding-top: rem($mobile_navbar_width);
+      position: relative;
+    }
+    .title_section {
+      &:after {
+        $title_section_after_top: 160%;
+        top: $title_section_after_top
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 368px) {
+  body .title_section {
+    &:after {
+      $title_section_after_top: 140%;
+      top: $title_section_after_top
+    }
+  }
+}

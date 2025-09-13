@@ -1,0 +1,160 @@
+[class*="icon_"] {
+    box-sizing: content-box;
+    display: inline-block;
+    &:before {
+        -webkit-mask-position: center;
+        mask-position: center;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 1rem;
+        display: inline-block;
+        content: '';
+        vertical-align: middle;
+        background: $blue_green;
+    }
+    @include icon(2rem, 2rem, 2rem);
+}
+
+.icon_linkedin {
+    &:before {
+        mask-image: url("../../assets/images/socials/linkedin.svg");
+    }
+    @include icon(1.25rem, 1.25rem, 1.25rem);
+}
+
+.icon_github {
+    &:before {
+        mask-image: url("../../assets/images/socials/github.svg");
+    }
+    @include icon(1.25rem, 1.25rem, 1.25rem);
+}
+
+.icon_azure {
+    &:before {
+        mask-image: url("../../assets/images/socials/azure.svg");
+    }
+    @include icon(1.25rem, 1.25rem, 1.25rem);
+}
+
+.icon_deviantArt {
+    &:before {
+        mask-image: url("../../assets/images/socials/deviantart.svg");
+    }
+    @include icon(1.25rem, 1.25rem, 1.25rem);
+}
+
+.icon_instagram {
+    &:before {
+        mask-image: url("../../assets/images/socials/instagram.svg");
+    }
+    @include icon(1.25rem, 1.25rem, 1.25rem);
+}
+
+.icon_html {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_html.svg");
+    }
+}
+
+.icon_css {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_css.svg");
+    }
+}
+
+.icon_sass {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_sass.svg");
+    }
+}
+
+.icon_less {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_less.svg");
+    }
+}
+
+.icon_bootstrap {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_bootstrap.svg");
+    }
+}
+
+.icon_tailwind {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_tailwind.svg");
+    }
+}
+
+.icon_javascript {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_javascript.svg");
+    }
+}
+
+.icon_reactjs{
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_reactjs.svg");
+    }
+}
+
+.icon_php{
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_php.svg");
+    }
+}
+
+.icon_mysql {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_mysql.svg");
+    }
+}
+.icon_symfony {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_symfony.svg");
+    }
+}
+.icon_strapi {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_strapi.svg");
+    }
+}
+.icon_wordpress {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_wordpress.svg");
+    }
+}
+.icon_linux {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_linux.svg");
+    }
+}
+.icon_vscode {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_vscode.svg");
+    }
+}
+.icon_accessibility {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_accessibility.svg");
+    }
+}
+.icon_windows {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_windows.svg");
+    }
+}
+
+.icon_to_left {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_chevron_gauche.svg");
+    }
+    @include icon(1rem, 1rem, 1rem);
+}
+
+.icon_to_right {
+    &:before {
+        mask-image: url("../../assets/images/icons/icon_chevron_droite.svg");
+    }
+    @include icon(1rem, 1rem, 1rem);
+}

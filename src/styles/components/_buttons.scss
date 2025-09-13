@@ -1,0 +1,27 @@
+.btn {
+    display: $btn_display;
+    position: $btn_position;
+    top: $btn_top;
+    left: $btn_left;
+    padding: $btn_padding;
+    color: $btn_color;
+    background: $btn_background;
+    box-shadow: $btn_shadow;
+    transition: $btn_transition;
+    border-radius: $btn_radius;
+    text-decoration: none;
+    font-weight: 700;
+    border: $btn_border;
+    text-align: center;
+    min-width: rem($btn_minwidth);
+    &:hover {
+        top: $btn_hover_top;
+        left: $btn__hover_left;
+        box-shadow: $btn_hover_shadow;
+    }
+
+    &_small {
+        min-width: auto;
+        padding: $btn_padding_small;
+    }
+}

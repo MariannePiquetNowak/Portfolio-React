@@ -1,0 +1,21 @@
+$btn_display:           inline-block;
+$btn_position:          relative;
+$btn_top:               0;
+$btn_left:              0;
+$btn_padding:           rem(8) rem(24) rem(8);
+$btn_padding_small:     rem(8) rem(16) rem(8);
+
+$btn_background:        #0A192F;
+$btn_shadow_color:      #02BEB3;
+$btn_shadow:            3px 3px 0 $btn_shadow_color; 
+$btn_transition:        all .15s linear 0s;
+$btn_color:             $btn_shadow_color;
+$btn_radius:            rem(5);
+$btn_border_color:      $blue_green; 
+$btn_border:            1px solid $btn_border_color;
+$btn_minwidth:          200;
+
+/* hover */ 
+$btn_hover_top:         5px;
+$btn__hover_left:       4px;
+$btn_hover_shadow:      0 0 0 $btn_shadow_color; 

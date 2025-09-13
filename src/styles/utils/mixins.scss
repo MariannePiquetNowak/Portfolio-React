@@ -1,0 +1,14 @@
+@mixin outline-focus($border_color) {
+    outline: 2px dashed $border_color;
+    border-radius: 5px;
+}
+
+@mixin icon($min_width, $min_height, $mask_size) {
+    min-width: $min_width;
+    min-height: $min_height;
+    &:before {
+        min-width: $min_width;
+        min-height: $min_height;
+        mask-size: $mask_size;
+    }
+}

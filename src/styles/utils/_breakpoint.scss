@@ -1,0 +1,7 @@
+$desktop_min_width: 1024px; 
+$tablet_max_width: $desktop_min_width - 1px; 
+$tablet_min_width: 768px; 
+$mobile_max_width: $tablet_min_width - 1px;
+$mobile_min_width: 480px;
+
+$default: 999px;

@@ -1,0 +1,47 @@
+$white:                         rgba(242, 242, 242, 1);
+$grey:                          rgba(203, 203, 203, 1);
+$grey_light:                    rgba(203, 203, 203, .25);
+$orange:                        rgba(198, 124, 26, 1);
+$blue_green:                    rgba(2, 190, 179, 1);
+$blue_navy:                     rgba(10, 25, 47, 1);
+$blue_dark:                     rgba(6, 15, 29, 1);
+$body_background:               $blue_navy;
+
+$background-linear:             linear-gradient(141deg, rgba(17,24,39,1) 0%, rgba(0,190,179,1) 100%);
+$background-linear-progress:    linear-gradient(141deg, rgba(0,190,179,1) 70%, rgba(17,24,39,1) 100%);
+$bg-linear-orange:              linear-gradient(90deg, $blue_green 0%, $orange 100%);
+
+$title-size-mobile:             rem(24);
+$sub-title-size-mobile:         rem(20); 
+$text-size-mobile:              rem(14);
+
+$title-size-tablet:             rem(32);
+$sub-title-size-tablet:         rem(24); 
+$text-size-tablet:              rem(16);
+
+$title-size-laptop:             rem(40);
+$sub-title-size-laptop:         rem(24); 
+$text-size-laptop:              rem(16);
+
+$title-size-desktop:            rem(48);
+$sub-title-size-desktop:        rem(32); 
+$text-size-desktop:             rem(20);
+
+$sections_position:             relative; 
+$sections_margin:               0 auto;
+$sections_max-width:            1290px;
+$sections_height:               100vh; //600px;
+$sections_padding:              rem(88) rem(0);
+
+// Base 
+$navbar_width: 140;
+$mobile_navbar_width: 72;
+$title_section_font_size: rem(35);
+$title_section_before_width: 100%;
+$title_section_before_height: rem(6);
+$title_section_before_top: 110%;
+$title_section_before_background: linear-gradient(to left, $orange, $blue_green);
+$title_section_after_width: rem(72);
+$title_section_after_height: rem(2);
+$title_section_after_top: 150%;
+$title_section_after_background: $orange;

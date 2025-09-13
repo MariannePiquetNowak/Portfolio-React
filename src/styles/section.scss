@@ -1,0 +1,35 @@
+@import "./utils/breakpoint";
+
+.section {
+    position: $sections_position;
+    max-width: $sections_max-width;
+    height: $sections_height;
+    margin: $sections_margin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 rem(16);
+    
+    & > img {
+      position: absolute;
+      right: 0;
+      z-index: -1;
+    }
+}
+
+@media screen and (max-width: $tablet_min_width) {
+    .section {
+        padding: 0;
+        padding: $sections_padding;
+        height: auto !important;
+        > div {
+            margin: rem(24) 1rem;
+        }
+        & > img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+

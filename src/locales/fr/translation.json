@@ -1,0 +1,190 @@
+{
+	"navbar": [
+		{
+			"id": "#About",
+			"name": "A propos",
+			"title": "Aller à la section 'A propos'"
+		}, 
+		{
+			"id": "#Skills",
+			"name": "Compétences",
+			"title": "Aller à la section 'Mes compétences'"
+		},
+		{
+			"id": "#Experiences",
+			"name": "Expériences",
+			"title": "Aller à la section 'Mes expériences'"
+		}, 
+		{
+			"id": "#Works",
+			"name": "Projets",
+			"title": "Aller à la section 'Mes projets'"
+		},
+		{
+			"id": "#Contact",
+			"name": "Me contacter",
+			"title": "Me contacter"
+		}
+	], 
+	"resume": {
+		"name": "Mon CV",
+		"title": "Télécharger Mon CV"
+	},    
+	"socials": [
+		{
+			"name": "linkedin",
+			"alt": "https://www.linkedin.com/in/marianne-piquet-nowak/"
+		},
+		{
+			"name": "github",
+			"alt": "https://www.linkedin.com/in/marianne-piquet-nowak/"
+		},
+		{
+			"name": "azure",
+			"alt": "https://github.com/MariannePiquetNowak"
+		},
+		{
+			"name": "deviantArt",
+			"alt": "https://www.deviantart.com/sckyzo-pat"
+		},
+		{
+			"name": "instagram",
+			"alt": "https://www.instagram.com/mariannepiquet/"
+		}
+	],
+  	"about": {
+    	"title": "Salut ! Je m'appelle",
+		"name": "Marianne Piquet-Nowak",
+		"job": "Je suis Développeuse Front-End et parfois Graphiste",
+		"presentation": "J'ai une passion pour le design, le web, les logotypes et les interfaces utilisateur qui emmènent ces derniers dans une expérience dynamique, en restant accessible"
+	},
+	"skills": {
+		"go": "Aller sur le site de",
+		"more": "Voir plus",
+		"close": "Fermer",
+		"title": "A propos de mes compétences", 
+		"subtitle": "Je possède un background atypique", 
+		"description": "Après avoir passé un BTS banque je me suis dirigée vers le métier de boucher où j'y ai travaillé durant 8 ans.<br>Par la suite, j'ai décidé de m'orienter vers un métier où ma passion pour la technologie et le graphisme seraient complémentaires et où l'ennui mental serait quasiment inexistant.<br>En 2019, j'ai entamé ma reconversion professionnelle en tant que développeur web, d'abord Full-Stack puis Front-End",
+		"description_2": "Tout au long de ma carrière, j'ai pu exercer sur les 3 pôles principaux de la conception web : design, développement front-end et développement back-end, ce qui me permet d'être le plus autonome possible sur un projet et de l'appréhender à tous les niveaux.",
+        "graphism_title": "Design",
+        "front_title": "Développement Front-End",
+        "back_title": "Développement Back-End",
+		"items": [
+			{
+				"name": "html",
+				"href": "https://developer.mozilla.org/fr/docs/Web/HTML"
+			},
+			{
+				"name": "css",
+				"href": "https://developer.mozilla.org/fr/docs/Web/CSS/Reference"
+			},
+			{
+				"name": "sass",
+				"href": "https://sass-lang.com/documentation/"
+			},
+			{
+				"name": "less",
+				"href": "https://lesscss.org/"
+			},
+			{
+				"name": "bootstrap",
+				"href": "https://getbootstrap.com/docs/4.1/getting-started/introduction/"
+			},
+			{
+				"name": "tailwind",
+				"href": "https://tailwindcss.com/docs/installation/using-vite"
+			},
+			{
+				"name": "javascript",
+				"href": "https://developer.mozilla.org/fr/docs/Web/JavaScript"
+			},
+			{
+				"name": "reactjs",
+				"href": "https://react.dev/learn"
+			},
+			{
+				"name": "php",
+				"href": "https://www.php.net/docs.php"
+			},
+			{
+				"name": "mysql",
+				"href": "https://dev.mysql.com/doc/"
+			},
+			{
+				"name": "symfony",
+				"href": "https://symfony.com/doc/current/index.html"
+			},
+			{
+				"name": "strapi",
+				"href": "https://docs.strapi.io/"
+			},
+			{
+				"name": "wordpress",
+				"href": "https://wordpress.org/documentation/"
+			},
+			{
+				"name": "linux",
+				"href": "https://help.ubuntu.com/"
+			},
+			{
+				"name": "vscode",
+				"href": "https://code.visualstudio.com/docs"
+			},
+			{
+				"name": "windows",
+				"href": "https://learn.microsoft.com/fr-fr/windows/"
+			},
+			{
+				"name": "accessibility",
+				"href": "https://accessibilite.numerique.gouv.fr/"
+			}
+		]
+	},
+	"jobSection": {
+		"title": "Où j'ai travaillé",
+		"jobs": [
+			{
+				"company": "Groupe Terrésens", 
+				"date": "Janvier 2023 - juillet 2024",
+				"tasks": [
+					"Maintenance des différents sites du groupe (sites réalisés sur Wordpress créé par l'agence @Pilot-in)",
+					"Apport de nouvelles fonctionnalités sur les sites Wordpress (PHP)",
+					"Gestion de données sur Zoho CRM (API, formulaires, fonctions, règles, management)",
+					"Rédaction de cahiers des charges ",
+					"Rédaction de documentations (accès API au CRM)",
+					"Audits techniques", 
+					"Maquettage de futurs projets web (Figma) ",
+					"Développement d'applications web (Symfony / ReactJS)"
+				]
+			},
+			{
+				"company": "Groupe Abylsen", 
+				"date": "Juillet 2024 - aujourd'hui",
+				"tasks": [
+					"Maintenance des différents sites du groupe (sites réalisés sur Wordpress créé par l'agence @Pilot-in)",
+					"Apport de nouvelles fonctionnalités sur les sites Wordpress (PHP)",
+					"Gestion de données sur Zoho CRM (API, formulaires, fonctions, règles, management)",
+					"Rédaction de cahiers des charges ",
+					"Rédaction de documentations (accès API au CRM)",
+					"Audits techniques", 
+					"Maquettage de futurs projets web (Figma) ",
+					"Développement d'applications web (Symfony / ReactJS)"
+				]
+			},
+			{
+				"company": "Groupe trest", 
+				"date": "Janvier 2023 - juillet 2024",
+				"tasks": [
+					"Maintenance des différents sites du groupe (sites réalisés sur Wordpress créé par l'agence @Pilot-in)",
+					"Apport de nouvelles fonctionnalités sur les sites Wordpress (PHP)",
+					"Gestion de données sur Zoho CRM (API, formulaires, fonctions, règles, management)",
+					"Rédaction de cahiers des charges ",
+					"Rédaction de documentations (accès API au CRM)",
+					"Audits techniques", 
+					"Maquettage de futurs projets web (Figma) ",
+					"Développement d'applications web (Symfony / ReactJS)"
+				]
+			}
+		]
+	}
+}
