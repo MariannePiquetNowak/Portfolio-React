@@ -17,18 +17,21 @@
     }
 }
 
+@media screen and (max-width: $default) {
+    .section > img {
+        max-width: 25rem;
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media screen and (max-width: $tablet_min_width) {
     .section {
         padding: 0;
-        padding: $sections_padding;
+        padding: rem(64) rem(0);
         height: auto !important;
         > div {
             margin: rem(24) 1rem;
-        }
-        & > img {
-            max-width: 300px;
-            width: 100%;
-            height: auto;
         }
     }
 }
