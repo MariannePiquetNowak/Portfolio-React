@@ -73,3 +73,10 @@ $jobs_list_item_before_marginright: 8;
         } 
     }
 }
+
+// Device propre au spécifique du carousel
+@media screen and (max-width: 578px) {
+    .jobs__info {
+        width: 93%;
+    }
+}

@@ -1,0 +1,34 @@
+.pagination__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: $carousel_width;
+
+    button {
+        background: none;
+        border: none;
+        margin: .5rem;
+    }
+
+    .paginator {
+        display: flex;
+        padding: .5rem 1rem;
+    
+        .dot {
+            border-radius: 50%;
+            width: .5rem;
+            height: .5rem;
+            background: $blue_green;
+            margin: .5rem;
+            &.active {
+                &,
+                &:focus, 
+                &:focus-visible {
+                    outline: 1px solid;
+                    outline-color: $blue_green;
+                    outline-offset: 2px;
+                }
+            }
+        }
+    }
+}
