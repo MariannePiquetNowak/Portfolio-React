@@ -10,7 +10,8 @@ const Card = ({handleMouseDown, company, date, tasks, cardStyle}) => {
                 <h2 className="jobs__subtitle">{company}</h2>
                 <span className="jobs__date">{date}</span>
                 <ul>
-                    { tasks.map((t, index) => <li key={`task_${index}`}>{t}</li> ) }
+                    { 
+                        tasks.map((t, index) => <li key={`task_${index}`}><p>{t}</p></li> ) }
                 </ul>
             </div>
         </div>

@@ -8,7 +8,7 @@ $jobs_subtitle_margin: .5rem 0;
 $jobs_subtitle_fontsize: 24;
 $jobs_date_fontsize: 16;
 $jobs_date_fontweight: 400;
-$jobs_list_item_padding: .25rem 1rem;
+$jobs_list_item_padding: .25rem 1rem .25rem 1.5rem;
 $jobs_list_item_before_background: $jobs_card_bordercolor;
 $jobs_list_item_before_borderradius: 54;
 $jobs_list_item_before_width: 6;
@@ -17,7 +17,7 @@ $jobs_list_item_before_marginright: 8;
 
 .jobs {
     &.section {
-        height: unset !important; // momentané
+       // height: unset !important; // momentané
     }
     &__info {
         // max-width: 600px;
@@ -41,15 +41,19 @@ $jobs_list_item_before_marginright: 8;
         ul > li {
             padding: $jobs_list_item_padding; 
             text-indent: -14px;
-            &:before {
-                content: "";
-                display: inline-block;
-                border-radius: 50px;
-                vertical-align: middle;
-                width: rem($jobs_list_item_before_width);
-                height: rem($jobs_list_item_before_height);
-                margin-right: rem($jobs_list_item_before_marginright);
-                background: $jobs_list_item_before_background; 
+            p {
+                margin: 0;
+                padding: 0;
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    border-radius: 50px;
+                    vertical-align: middle;
+                    width: rem($jobs_list_item_before_width);
+                    height: rem($jobs_list_item_before_height);
+                    margin-right: rem($jobs_list_item_before_marginright);
+                    background: $jobs_list_item_before_background; 
+                }
             }
         }
     }
@@ -66,6 +70,13 @@ $jobs_list_item_before_marginright: 8;
         align-items: center;
         & > img {
             position: static;
-        }
+        } 
+    }
+}
+
+// Device propre au spécifique du carousel
+@media screen and (max-width: 578px) {
+    .jobs__info {
+        width: 93%;
     }
 }

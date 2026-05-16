@@ -1,45 +1,51 @@
-// POC Carousel
-.carousel__container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+$carousel_width: 37rem;
 .carousel {
     position: relative;
-    height: 30rem;
-    width: 37rem;
+    height: $carousel_width;
+    width: $carousel_width;
     overflow: hidden;
-    .card__container {
-        box-sizing: border-box;
-        position: absolute;
-        min-width: 100%;
-        transition: all 1s; /* cut from .card class */
+
+    &__container {
+        width: 100%;
     }
+
     &__navigation {
         display: flex;
         align-items: center;
+        justify-content: center;
+        max-width: $carousel_width;
+
         button {
             background: none;
             border: none;
             margin: .5rem;
         }
     }
+
     .card {
-        position: absolute;
-        width: 100%;
+        //position: absolute;
+        display: block;
+
         * {
             user-select: none;
             pointer-events: none;
 
         }
+
+        &__container {
+            box-sizing: border-box;
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            transition: all 1s; /* cut from .card class */
+        }
     }
 }
-// Pagination
+
 .paginator {
     display: flex;
     padding: .5rem 1rem;
+
     .dot {
         border-radius: 50%;
         width: .5rem;
@@ -69,4 +75,36 @@
 .activeCard {
     left: 50%;
     transform: translateX(-50%); 
+}
+
+// Spécifiques devices pour le carousel car le position absolute ne permet pas de gérer les width & height
+@media screen and (max-width: $default) {
+    .carousel {
+        height: 33rem;
+        .card {
+            &__container {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile_max_width) {
+    .carousel {
+       width: 36rem; 
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .carousel {
+        width: 20rem; 
+        height: 39rem;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }

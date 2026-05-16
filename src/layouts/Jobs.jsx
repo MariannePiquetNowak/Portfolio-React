@@ -3,6 +3,7 @@ import useElementInView from "../hooks/useElementInView";
 import { useTranslation } from "react-i18next";
 import Card from '../components/Card';
 import Paginator from "../components/Paginator";
+import jobsImage from '../assets/images/jobs-section.svg';
 
 const Jobs = ({locale}) => {
     // const [error, setError] = useState(null);
@@ -75,9 +76,17 @@ const Jobs = ({locale}) => {
         }
     };
 
+
     return (
         <section id="Experiences" className="jobs section" ref={targetRef}>
-            
+            <img
+                width='544'
+                height='428'
+                alt="Avatar de Marianne Piquet-Nowak"
+                loading="lazy"
+                className={`reveal ${reveale}`}
+                src={jobsImage}
+            />
             <div className="jobs__info">
                 <h1 className="title_section">{t("jobSection.title")}</h1>
                 <div className="carousel__container">
